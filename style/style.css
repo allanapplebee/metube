@@ -14,7 +14,7 @@
 .video-details .details {
   margin-top: 10px;
   padding: 10px;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 4px;
 }
 
@@ -22,6 +22,22 @@
   cursor: pointer;
 }
 
+li.list-group-item{
+  border: none;
+}
+
 .list-group-item:hover {
   background-color: #eee;
 }
+
+header {
+	text-align: center;
+}
+header h1 {
+	font-size: 64px;
+	font-weight: 300;
+	margin: 80px 0 25px;
+	color: #2c3e50;
+}
+header h1 span {
+	font-weight: 700;

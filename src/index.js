@@ -5,7 +5,7 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/SearchBar';
 import VideoList from './components/VideoList';
 import VideoDetail from './components/VideoDetail'
-const ApiKey = 'AIzaSyAlDKdy4KqchPZDXuxYwY8Sk-hISK5oRfQ';
+const ApiKey = 'AIzaSyC1lnJBRxIbXytuWkKOVu22uDKz5aYotAA';
 
 class App extends Component {
   constructor(props) {
@@ -33,6 +33,9 @@ class App extends Component {
 
     return (
       <div>
+        <header>
+          <h1>me<span>Tube</span></h1>
+        </header>
         <SearchBar onSearchTermChange={videoSearch}/>
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList
